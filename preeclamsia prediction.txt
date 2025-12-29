@@ -190,9 +190,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-# =====================
 # Load and preprocess data
-# =====================
 data = pd.read_csv("Maternal Health Risk Data Set.csv")
 
 # Encode labels
@@ -216,9 +214,8 @@ best_rf = RandomForestClassifier(
 )
 best_rf.fit(X_train, y_train)
 
-# =====================
 # Prediction function
-# =====================
+
 label_map = {0: "High Risk", 1: "Low Risk", 2: "Mid Risk"}
 
 def predict(age, sbp, dbp, bs, temp, hr):
@@ -227,11 +224,10 @@ def predict(age, sbp, dbp, bs, temp, hr):
     pred = best_rf.predict(input_data)[0]
     return label_map[pred]
 
-# =====================
 # Gradio UI
-# =====================
+
 with gr.Blocks() as demo:
-    gr.Markdown("## 🌸 Maternal Health Risk Predictor")
+    gr.Markdown("## Maternal Health Risk Predictor")
 
     with gr.Row():
         with gr.Column():
@@ -241,7 +237,7 @@ with gr.Blocks() as demo:
             bs = gr.Number(label="Blood Sugar")
             temp = gr.Number(label="Body Temperature")
             hr = gr.Number(label="Heart Rate")
-            btn = gr.Button("Predict Risk Level 🚀")
+            btn = gr.Button("Predict Risk Level ")
 
         with gr.Column():
             output = gr.Textbox(label="Prediction Result")
@@ -250,3 +246,4 @@ with gr.Blocks() as demo:
 
 # Launch the app
 demo.launch()
+
