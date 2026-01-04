@@ -113,13 +113,13 @@ Ensemble Model: Improved cross-validation accuracy
 Key Influential Features: Blood Pressure, Blood Sugar, Age, Heart Rate
 
 # How to Run the Project
-1️⃣ Clone the Repository
+1️. Clone the Repository
 git clone https://github.com/MonicaAishwarya/maternal-health-risk-prediction.git
 
-2️⃣ Install Dependencies
+2️. Install Dependencies
 pip install pandas numpy scikit-learn xgboost shap gradio matplotlib
 
-3️⃣ Run the Application
+3️. Run the Application
 python app.py
 
 
