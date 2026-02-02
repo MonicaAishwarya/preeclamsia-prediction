@@ -2,9 +2,9 @@
 
 # Project Overview
 
-This project implements a machine learning–based Maternal Health Risk Prediction System that classifies pregnant women into Low Risk, Mid Risk, or High Risk categories using clinical parameters. The goal is to support early risk assessment and improve maternal healthcare decision-making through data-driven insights.
+This project uses clinical parameters to classify pregnant women into Low Risk, Mid Risk, or High Risk categories using a machine learning-based Maternal Health Risk Prediction System. The objective is to use data-driven insights to enhance maternal healthcare decision-making and facilitate early risk assessment.
 
-The system includes data preprocessing, model training, hyperparameter tuning, model explainability, and a user-friendly Gradio web interface for real-time predictions.
+Data preprocessing, model training, hyperparameter tuning, model explainability, and an intuitive Gradio web interface for real-time forecasts are all included in the system.
 
 # Objectives
 
